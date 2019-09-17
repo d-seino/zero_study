@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet.css') }}">
+</head>
+<body>
+      <form action = "/confirm" method = "POST">
+         <p>名前<input type = "text" name = "名前" /></p>
+         <p>題名<input type ="text" name = "題名" /></p>
+         <p>電文</p>
+         <textarea name="電文" rows="10" cols="50">ここに電文を入力して下さい。</textarea><br>
+         <p><input type = "submit" value = "送信" /></p>
+      </form>
+</body>
+</html>
